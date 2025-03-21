@@ -3,14 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>blood donation form </title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <form accept="form.php" method="post"></form>
-    <input type="text" name="name" placeholder="name"/>
-    <input type="text" name="email" placeholder="email"/>
-    <input type="text" name="phone" placeholder="phone"/>
-    <input type="text" name="message" placeholder="message"/>
-    
+    <header>
+        <h1>blood donations Form</h1>
+    </header>
+    <center>
+        <form>
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" placeholder="Enter your first name"/>
+            </div>
+            <br> <!-- Add space between elements -->
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Enter your last name"/>
+            </div>
+            <br>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="text" id="mail" placeholder="Enter your email"/>
+            </div>
+            <br>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age"/>
+            </div>
+            <br>
+            <div>
+                <label for="Phone No">Phone No:</label>
+                <input type="number" id="Phone No" placeholder="Enter your Phone"/>
+            </div>
+            <br>
+            <div>
+                <label for="blood group">blood group:</label>
+                <input type="blood group" id="blood group" placeholder="Enter your blood group" minlength="5"/>
+            </div>
+            <br>
+            <div>
+                <label for="height">Height:</label>
+                <input type="text" text="height" placeholder="Enter your height"/>
+            </div>
+            <br>
+            <div>
+                <label for="weight">Weight:</label>
+                <input type="text" text="weight" placeholder="Enter your weight"/>
+            </div>
+            <br>
+            <div>
+                <label for="gender">gender:</label>
+                <label><input type="radio" /> male</label>
+                <label><input type="radio" /> female</label>
+            </div>
+            <div>
+              <label for="address">Address:</label>  
+                    <textarea name="address" id="address" rows="5"></textarea>
+           
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <br>
+        </form>
+    </center>
 </body>
 </html>
