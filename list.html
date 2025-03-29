@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-container{
+            width: 400px;
+            height: 200px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <ul id="unorder">
+            <!-- <li>""</li>
+            <li>""</li>
+            <li>""</li> -->
+        </ul> 
+    </div>
+    <script>
+        const employeesData = [
+            {
+                employeeId: 1,
+                employeeName: "Anil",
+                employeeSalary: 50000,
+                employeeAge: 21
+
+            },
+            {
+                employeeId: 2,
+                employeeName: "nandu",
+                employeeSalary: 60000,
+                employeeAge: 20
+            },
+            {
+                employeeId: 3,
+                employeeName: "tharun",
+                employeeSalary: 70000,
+                employeeAge: 20
+            },
+            {
+                employeeId: 4,
+                employeeName: "vijay",
+                employeeSalary: 80000,
+                employeeAge: 21
+            }
+        ];
+
+        const ulitem = document.getElementById("unorder");
+        for (let i = 0; i <= employeesData.length - 1; i++) {
+            const li = document.createElement("li");
+            li.textContent = `${employeesData[i].employeeId},${employeesData[i].employeeName},${employeesData[i].employeeSalary},${employeesData[i].employeeAge}`;
+            ulitem.appendChild(li);
+        };
+    </script>
+</body>
+</html>

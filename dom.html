@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* .main-heading{
+            color: blue;
+        }
+        #root1{
+            color: blanchedalmond;
+
+        } */
+    </style>
 </head>
 <body>
     <div class="maincontainer" id="root">
@@ -12,13 +21,48 @@
         let rootElement=document.getElementById("root");
         rootElement.textContent="this is anil";
         rootElement.style.color="red";
-        rootElement.style.fontSize=40px;
+        rootElement.style.fontSize="40px";
+
         let heading1=document.createElement("h1");
         heading1.textContent="this is heading 1";
         rootElement.appendChild(heading1);
+
         let heading2=document.createElement("h2");
         heading2.textContent="prabhas is a great actor";
+        heading2.style.color="orange";
         rootElement.appendChild(heading2);
+
+        heading1.addEventListener("click",function() {
+            heading1.classList.add("main-heading")
+            heading1.style.color="green";
+            heading1.style.fontSize="40px";
+        });
+
+        heading2.addEventListener("mouseover",function(){
+            heading2.classList.add("main-heading")
+            heading2.style.color="blue"
+            heading2.style.fontSize="50px"
+        });
+        // heading1.setAttribute("id","root1");
+
+       // document.addEventListener("keydown",function(event){
+         //   console.log("this key pressed; ",event.key);
+       // });
+       document.addEventListener("keydown",function(event){
+        console.log("this key is pressed;", event.key)
+        });
+        document.addEventListener("keyup",function(event){
+            console.log("this key released:", event.key);
+        });
+        
+        
+        // document.addEventListener("keydown",function(event){v
+        //     if(event.key=="g"){
+        //         console.log("this key pressed:",event.key);
+        //     }
+        // });
+
+
     </script>
 </body>
 </html>
