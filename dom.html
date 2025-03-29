@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="maincontainer" id="root">
+    </div>
+    <script>
+        let rootElement=document.getElementById("root");
+        rootElement.textContent="this is anil";
+        rootElement.style.color="red";
+        rootElement.style.fontSize=40px;
+        let heading1=document.createElement("h1");
+        heading1.textContent="this is heading 1";
+        rootElement.appendChild(heading1);
+        let heading2=document.createElement("h2");
+        heading2.textContent="prabhas is a great actor";
+        rootElement.appendChild(heading2);
+    </script>
+</body>
+</html>

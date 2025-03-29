@@ -6,75 +6,60 @@
     <title>Document</title>
     <style>
         .main-container{
-            text-align: center;
             display:flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            height:100vh;
+            margin-top: 100px;
             justify-content:center;
-            align-content: center;
-            
-
+            align-items: center;
         }
-        .heading1{
-            text-align: center;
+        .container1{
             width: 100px;
             height: 100px;
             background-color: darkmagenta;
+            align-self: flex-start;
             margin-right: 100px;
-            align-content: center;
-            
         }
-        .heading2{
-            text-align: center;
+        .container2{
             width:  100px;
             height:100px;
             background-color: red;
+            align-self: flex-start;
             margin-right: 100px;
-            align-content: center;
         }
-        .heading3{
-            text-align: center;
+        .container3{
             width: 100px;
             height: 100px;
             background-color: blue;
+            align-self: center;
             margin-right: 100px;
-            align-content: center;
+
             
         }
-        .heading4{
-            text-align: center;
+        .container4{
             width: 100px;
             height: 100px;
             background-color: chartreuse;
+            align-self: flex-end;
             margin-right: 100px;
-            align-content: center;
+            order: 1;
         }
-        .heading5{
-            text-align: center;
+        .container5{
             width: 100px;
             height: 100px;
             background-color: darkorange;
+            align-self: flex-end;
             margin-right: 100px;
-            align-content: center;
         }
     </style>
 </head>
 <body>
 <div class="main-container">
-        <div>
-            <h1 class="heading1 align-items-center">1</h1>
-        </div>
-        <div>
-            <h2 class="heading2">2</h2>
-        </div>
-        <div>
-            <h3 class="heading3">3</h3>
-        </div>
-        <div>
-            <h4 class="heading4">4</h4>
-        </div>
-        <div>
-            <h5 class="heading5">5</h5>
-    </div>
+            <h1 class="container1">1</h1>
+            <h2 class="container2">2</h2>
+            <h3 class="container3">3</h3>
+            <h4 class="container4">4</h4>
+            <h5 class="container5">5</h5>
 </div>
    
 </body>
